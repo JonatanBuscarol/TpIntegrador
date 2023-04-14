@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MatesProgramados</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body >
+    <div class="normal" id="color">
+    
+    <!-- Código de la empresa ficticia creada -->
+    <!-- Para darle estilo, utilicé tanto la librería de bootstrap como css puro para incorporar ambas.  -->
+    <!--Secciones:-->
+    <!-- Cabecera flotante.  -->
+    <section class="fixed-top bg-light">
+      <div class="container-fluid.w-100" id="headerFloat">
+        <label for="whatsapp" class="mr-2"
+          ><a
+            href="https://web.whatsapp.com/send?phone=+5493564528250&amp;text="
+            target="_blank"
+            ><img id="icon" src="whatsapp.png"
+          /></a>
+          WhatsApp: 3564528250
+        </label>
+        <label>
+          <a href="mailto:jonatanbuscarol@gmail.com" target="_blank"
+            ><img id="icon" src="correo.png"
+          /></a>
+          Gmail: jonatanbuscarol@gmail.com</label
+        ><button class="btnMod" > </button>
+      </div>
+    </section>
+
+    <!-- Encabezado principal o cabecera secundaria-->
+    <header class="pt-5">
+      <h1>MatesProgramados</h1>
+      <p>
+        Hace cinco años que comenzamos con el emprendimiento de mates
+        programados para acompañarte en la escritura de código.
+      </p>
+    </header>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>Madera</h2> 
+      <img class="pic" src="madera.jpg"/>
+    </div>
+    <div class="col">
+      <h2>Acero</h2>
+      <img class="pic" src="acero.jpg"/>
+    </div>
+    <div class="col">
+      <h2>Cuero</h2>
+      <img class="pic" src="cuero.jpg"/>
+    </div>
+    <div class="col">
+      <h2>Calabaza</h2>
+        <img class="pic" src="calabaza.jpg"/>
+    </div>
+  </div>
+</div>
+
+    <!-- Formulario de cotización -->
+    <section class="py-5">
+      <div class="container">
+        <h2>Solicitá una cotización</h2>
+        <form id="cotizacion-form" class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre completo:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">
+              Por favor, ingrese su nombre completo.
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">
+              Por favor, ingrese su correo electrónico.
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">
+              Por favor, ingrese su número de teléfono.
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cantidad">Cantidad:</label>
+            <input
+              type="number"
+              id="cantidad"
+              name="cantidad"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">
+              Por favor, ingrese la cantidad de mates que desea.
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="material">Material:</label>
+            <select id="material" name="material" class="form-control" required>
+              <option value="">Madera</option>
+              <option value="">Acero Inoxidable</option>
+              <option value="">Cuero</option>
+              <option value="">Calabaza</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div id="btnform">
+        <button >Enviar</button>
+      </div>
+    </div>
+    </section>
+    <div id="bardown">
+      <!-- Presentación personal y contacto -->
+      
+        <div class="container" id="aboutUs">
+          <h2>Quiénes somos <button id="hide1">▲</button><button id="show1">▼</button></p></h2>
+          <p id="txt1">
+            Somos una empresa que se fundó hace cinco años con el objetivo de
+            llevar el arte de preparar mates al siguiente nivel. Nació fruto de
+            la pasión tanto por cebar, como por programar.
+          </p>
+        </div>
+        <div class="container" id="aboutMe">
+            <h2>Fundador <button id="hide2">▲</button><button id="show2">▼</button></p></h2>
+            <p id="txt2">
+              Soy Jonatan Buscarol. Tengo 24 años y amo tanto programar como cebar mates. 
+              Soy de River Plate y campeón mundial. Decidí crear este emprendimiento para 
+              que los mates de distintos materiales estén al alcance de mi ciudad.
+            </p>
+          </div>
+          <div class="container" id="where">
+            <h2>¿Dónde estamos? <button id="hide3">▲</button><button id="show3">▼</button></p></h2>
+            <p id="txt3">
+              Estamos en San Francisco, Córdoba.
+            </p>
+          </div>
+    </div>
+    <!-- Utilicé Javascript puro y la librería jQuery para incorporar ambos. -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

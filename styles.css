@@ -1,0 +1,93 @@
+.fixed-top {
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 800px;
+}
+
+.form-inline label {
+  font-weight: bold;
+}
+
+.form-inline .form-control {
+  width: 200px;
+}
+#headerFloat {
+  background-color: aqua;
+  box-shadow: 0px 0px 10px 7px aqua;
+}
+#icon {
+  width: 30px;
+  height: 30px;
+}
+
+#icon:hover {
+  width: 35px;
+  height: 35px;
+}
+#bardown {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#aboutUs {
+  width: 33%;
+}
+#aboutMe {
+  width: 33%;
+}
+#where {
+  width: 33%;
+}
+button:hover {
+  background: #062446;
+  color: white;
+  border: 1.5px solid gray;
+  border-radius: 40%;
+}
+
+button {
+  background: transparent;
+  color: #062446;
+  border: transparent;
+}
+.pic {
+  width: 170px;
+  height: 170px;
+  box-shadow: 0px 0px 10px 1px var(--shade);
+}
+
+#btnform {
+text-align: center;
+}
+
+.oscuro {
+  background-color: black;
+  color: white;
+  --btnfont: white;
+  --btnbg: black;
+  --shade: white;
+}
+.normal {
+  background-color: white;
+  color: black;
+  --btnfont: black;
+  --btnbg: white;
+  --shade: black;
+}
+.btnMod {
+  position: absolute;
+
+  /*left: 250px;*/
+
+  right: 50px;
+  height: 30px;
+  width: 30px;
+  border: none;
+  color: var(--btnfont);
+  background-color: var(--btnbg);
+}
